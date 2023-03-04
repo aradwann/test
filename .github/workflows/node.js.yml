@@ -49,6 +49,9 @@ jobs:
       - name: Install dependencies
         run: pnpm i
 
+      - name: setup sqlite db migrations
+        run: pnpm knex migrate:latest
+
       - name: test with coverage
         run: pnpm test:cov
 
