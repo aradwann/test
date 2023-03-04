@@ -6,14 +6,12 @@
   "main": "index.js",
   "scripts": {
     "test": "node --test",
-    "cover": "pnpm cover:test && pnpm cover:report",
-    "cover:test": "nyc --silent pnpm test",
-    "cover:report": "nyc report --reporter=lcov --reporter=text"
+    "test:cov": "c8 pnpm test"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "devDependencies": {
-    "nyc": "^15.1.0"
+    "c8": "^7.13.0"
   }
 }

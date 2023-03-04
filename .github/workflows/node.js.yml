@@ -47,10 +47,10 @@ jobs:
             ${{ runner.os }}-pnpm-store-
 
       - name: Install dependencies
-        run: pnpm install
+        run: pnpm i
 
       - name: test with coverage
-        run: pnpm cover
+        run: pnpm test:cov
 
       - name: Coveralls
         uses: coverallsapp/github-action@master
