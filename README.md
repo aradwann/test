@@ -1,4 +1,4 @@
-# Tead
+# test
 ![Nodejs workflow](https://github.com/aradwann/test/actions/workflows/node.js.yml/badge.svg)
 [![Coverage Status](https://coveralls.io/repos/github/aradwann/test/badge.svg?branch=main)](https://coveralls.io/github/aradwann/test?branch=main)
 
