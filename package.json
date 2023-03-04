@@ -6,7 +6,9 @@
   "main": "index.js",
   "scripts": {
     "test": "node --test",
-    "test:cov": "nyc pnpm test"
+    "cover": "pnpm cover:test && pnpm cover:report",
+    "cover:test": "nyc --silent pnpm test",
+    "cover:report": "nyc report --reporter=lcov --reporter=text"
   },
   "keywords": [],
   "author": "",

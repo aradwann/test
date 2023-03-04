@@ -49,8 +49,8 @@ jobs:
       - name: Install dependencies
         run: pnpm install
 
-      - name: test
-        run: pnpm test:cov
+      - name: test with coverage
+        run: pnpm cover
 
       - name: Coveralls
         uses: coverallsapp/github-action@master
